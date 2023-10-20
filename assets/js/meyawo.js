@@ -36,3 +36,9 @@ $('#nav-toggle').click(function(){
     $(this).toggleClass('is-active')
     $('ul.nav').toggleClass('show');
 });
+
+// submission alert
+function showAlert() {
+    alert('Thanks for reaching out!');
+    return true;  // return true to allow the form to be submitted
+}
