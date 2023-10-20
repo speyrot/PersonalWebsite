@@ -210,7 +210,8 @@
             <p class="section-subtitle">How can you communicate?</p>
             <h6 class="section-title mb-5">Contact Me</h6>
             <!-- contact form -->
-            <form action="/" method="POST" class="contact-form col-md-10 col-lg-8 m-auto" data-netlify="true">
+            <form name="contact" action="/" method="POST" class="contact-form col-md-10 col-lg-8 m-auto" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact">
                 <div class="form-row">
                     <div class="form-group col-sm-6">
                         <input type="text" name="name" size="50" class="form-control" placeholder="Your Name" required>
