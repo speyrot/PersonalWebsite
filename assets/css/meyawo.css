@@ -4674,6 +4674,10 @@ input[type="button"].btn-block {
   background-size: 100% 100%;
 }
 
+.components-section {
+  display: none;
+}
+
 @media (max-width: 575.98px) {
   .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid {
@@ -11137,6 +11141,7 @@ p {
   border: 1px solid #dee2e6;
   overflow: hidden;
   border-radius: 3px;
+  margin-bottom: 30px;
 }
 
 .service-card .body {
