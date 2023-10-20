@@ -236,17 +236,17 @@
             <p class="section-subtitle">How can you communicate?</p>
             <h6 class="section-title mb-5">Contact Me</h6>
             <!-- contact form -->
-            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
+            <form name="contact" action="/" method="POST" onsubmit="alert('Thanks for reaching out!');" class="contact-form col-md-10 col-lg-8 m-auto" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact">
                 <div class="form-row">
                     <div class="form-group col-sm-6">
-                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>
+                        <input type="text" name="name" size="50" class="form-control" placeholder="Your Name" required>
                     </div>
                     <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" placeholder="Enter Email" requried>
+                        <input type="email" name="email" class="form-control" placeholder="Enter Email" required>
                     </div>
                     <div class="form-group col-sm-12">
-                        <textarea name="comment" id="comment" rows="6" class="form-control"
-                            placeholder="Write Something"></textarea>
+                        <textarea name="message" id="comment" rows="6" class="form-control" placeholder="Write Something" required></textarea>
                     </div>
                     <div class="form-group col-sm-12 mt-3">
                         <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
